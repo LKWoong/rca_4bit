@@ -1,0 +1,12 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/rldnd/pjx/rca_test/rca_test.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sim_1/new/tb_rca_test.v,1709304134,verilog,,,,tb_rca_test,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD2.v,1709305392,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD3.v,,DD2,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD3.v,1709305392,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD4.v,,DD3,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD4.v,1709305392,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/FF.v,,DD4,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/FF.v,1709302699,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/full_adder.v,,FF,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/full_adder.v,1709302699,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/rca_test.v,,full_adder,,,,,,,,
+C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/rca_test.v,1709302723,verilog,,C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sim_1/new/tb_rca_test.v,,rca_test,,,,,,,,

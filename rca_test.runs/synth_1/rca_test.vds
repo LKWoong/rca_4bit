@@ -1,0 +1,237 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  1 23:23:27 2024
+# Process ID: 8968
+# Current directory: C:/Users/rldnd/pjx/rca_test/rca_test.runs/synth_1
+# Command line: vivado.exe -log rca_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source rca_test.tcl
+# Log file: C:/Users/rldnd/pjx/rca_test/rca_test.runs/synth_1/rca_test.vds
+# Journal file: C:/Users/rldnd/pjx/rca_test/rca_test.runs/synth_1\vivado.jou
+# Running On: DESKTOP-448FFAI, OS: Windows, CPU Frequency: 2370 MHz, CPU Physical cores: 6, Host memory: 16505 MB
+#-----------------------------------------------------------
+source rca_test.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 468.574 ; gain = 183.039
+Command: read_checkpoint -auto_incremental -incremental C:/Users/rldnd/pjx/rca_test/rca_test.srcs/utils_1/imports/synth_1/rca_test.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/rldnd/pjx/rca_test/rca_test.srcs/utils_1/imports/synth_1/rca_test.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top rca_test -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2908
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 923.430 ; gain = 443.152
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'rca_test' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/rca_test.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FF' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/FF.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FF' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/FF.v:23]
+INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'full_adder' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/full_adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DD3' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DD3' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DD2' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DD2' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DD4' [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'DD4' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/DD4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'rca_test' (0#1) [C:/Users/rldnd/pjx/rca_test/rca_test.srcs/sources_1/new/rca_test.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.863 ; gain = 549.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.863 ; gain = 549.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.863 ; gain = 549.586
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1029.863 ; gain = 549.586
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 8     
++---Registers : 
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 18    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1203.766 ; gain = 723.488
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1204.645 ; gain = 724.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name  | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|rca_test    | D33/q_reg | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|rca_test    | D41/q_reg | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|rca_test    | D42/q_reg | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+-----------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |LUT3   |     8|
+|3     |SRL16E |     3|
+|4     |FDRE   |    24|
+|5     |IBUF   |    10|
+|6     |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------------+------+
+|      |Instance |Module       |Cells |
++------+---------+-------------+------+
+|1     |top      |             |    51|
+|2     |  D21    |DD2          |     2|
+|3     |  D22    |DD2_0        |     2|
+|4     |  D23    |DD2_1        |     2|
+|5     |  D31    |DD3          |     3|
+|6     |  D32    |DD3_2        |     3|
+|7     |  R1     |FF           |     1|
+|8     |  R2     |FF_8         |     1|
+|9     |  F0     |full_adder   |     1|
+|10    |  F1     |full_adder_5 |     1|
+|11    |  F2     |full_adder_6 |     1|
+|12    |  F3     |full_adder_7 |     1|
+|13    |  D33    |DD3_3        |     2|
+|14    |  D41    |DD4          |     3|
+|15    |  D42    |DD4_4        |     3|
+|16    |  R3     |FF_9         |     2|
+|17    |  R4     |FF_10        |     2|
+|18    |  R5     |FF_11        |     2|
+|19    |  R6     |FF_12        |     2|
+|20    |  R7     |FF_13        |     1|
++------+---------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1204.855 ; gain = 724.578
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1204.855 ; gain = 724.578
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1204.855 ; gain = 724.578
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1217.695 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1310.766 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 5d2f9842
+INFO: [Common 17-83] Releasing license: Synthesis
+26 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1310.766 ; gain = 838.250
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1310.766 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/rldnd/pjx/rca_test/rca_test.runs/synth_1/rca_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rca_test_utilization_synth.rpt -pb rca_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  1 23:23:59 2024...
